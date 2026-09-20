@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #050816;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.game-container {
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+.score-board {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#game-area {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin: auto;
+
+    background: linear-gradient(
+        #050816,
+        #101b3d
+    );
+
+    border: 2px solid white;
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+#game-area::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        radial-gradient(circle, white 1px, transparent 1px),
+        radial-gradient(circle, white 1px, transparent 1px);
+
+    background-size:
+        60px 60px,
+        90px 90px;
+
+    background-position:
+        10px 20px,
+        40px 60px;
+
+    opacity: 0.25;
+
+    pointer-events: none;
+}
+
+#spaceship {
+    position: absolute;
+
+    bottom: 20px;
+    left: 175px;
+
+    font-size: 45px;
+
+    z-index: 2;
+}
+
+.asteroid {
+    position: absolute;
+
+    top: -50px;
+
+    font-size: 40px;
+
+    z-index: 2;
+}
+
+.instructions {
+    margin-top: 15px;
+
+    color: #cccccc;
+
+    font-size: 16px;
+}
+
+
+#game-over {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 80%;
+
+    padding: 30px;
+
+    background: rgba(5, 8, 22, 0.95);
+
+    border: 2px solid white;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    z-index: 10;
+}
+
+#game-over h2 {
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+#game-over p {
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+#restart-button {
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: #050816;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+}
+
+#restart-button:hover {
+    background: #cccccc;
+}
+
+.hidden {
+    display: none;
+}

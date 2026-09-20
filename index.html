@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cosmic Dodge</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <h1>🚀 COSMIC DODGE</h1>
+
+        <div class="score-board">
+            Score: <span id="score">0</span>
+        </div>
+
+        <div id="game-area">
+
+            <!-- Spaceship -->
+            <div id="spaceship">🚀</div>
+
+            <!-- Game Over Screen -->
+            <div id="game-over" class="hidden">
+
+                <h2>💥 GAME OVER</h2>
+
+                <p>
+                    Your Score:
+                    <span id="final-score">0</span>
+                </p>
+
+                <p>
+                    High Score:
+                    <span id="high-score">0</span>
+                </p>
+
+                <button id="restart-button">
+                    PLAY AGAIN
+                </button>
+
+            </div>
+
+        </div>
+
+        <p class="instructions">
+            Use ⬅️ and ➡️ arrow keys to move your spaceship
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
