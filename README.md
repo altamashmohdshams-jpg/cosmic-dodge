@@ -11,6 +11,15 @@ Cosmic Dodge is a simple space-themed browser game developed as part of the SSRP
 - If an asteroid hits the spaceship, the game ends.
 - Click **PLAY AGAIN** to restart the game.
 
+## 🚀 How to Run the Game
+
+1. Download or clone this repository.
+2. Open the project folder.
+3. Open `index.html` in a web browser.
+4. Use the Left Arrow (←) and Right Arrow (→) keys to control the spaceship.
+
+Alternatively, you can open the project in **Visual Studio Code** and run `index.html` using **Live Server**.
+
 ## ✨ Features
 
 - Space-themed game design
@@ -21,7 +30,7 @@ Cosmic Dodge is a simple space-themed browser game developed as part of the SSRP
 - Increasing difficulty
 - Game Over screen
 - Restart functionality
-- High score tracking using localStorage
+- High score tracking using `localStorage`
 
 ## 💻 Technologies Used
 
@@ -41,14 +50,14 @@ Cosmic Dodge is a simple space-themed browser game developed as part of the SSRP
 - Event listeners
 - Functions
 - Conditional statements
-- setInterval()
+- `setInterval()`
 - Random number generation
 - Collision detection
-- localStorage
+- `localStorage`
 
 ## 🎯 Purpose
 
-This project was created for the Somaiya Space Research Project (SSRP) Computer Systems recruitment task.
+This project was created for the **Somaiya Space Research Project (SSRP) Computer Systems recruitment task**.
 
 The project demonstrates basic web development, JavaScript programming, logical thinking, user interaction and game mechanics.
 
